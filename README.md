@@ -1,10 +1,10 @@
 # Dijkstra
  
-A little pathfinder. Hand it a grid of digits and it works out the cheapest way to walk from the top-left corner to the bottom-right, where the cost of each step is how much the number changes as you move onto the next cell.
+A little pathfinder. Hand it a grid of digits and it works out the cheapest way to walk from the top left corner to the bottom right, where the cost of each step is how much the number changes as you move onto the next cell.
  
 ## How it works
  
-It's Dijkstra's algorithm on a grid. Every cell is a node, its neighbours are the cells directly north, east, south, and west, and the weight of moving between two of them is the absolute difference of their values. From the start it keeps the cheapest-known cost to reach each cell, always expands whichever cell is currently cheapest, and stops the moment it reaches the bottom-right — the cost it's holding at that point is the answer. No diagonals, and a step onto an equal number is free.
+It's Dijkstra's algorithm on a grid. Every cell is a node, its neighbours are the cells directly north, east, south, and west, and the weight of moving between two of them is the absolute difference of their values. From the start it keeps the cheapest known cost to reach each cell, always expands whichever cell is currently cheapest, and stops the moment it reaches the bottom-right; the cost it's holding at that point is the answer. No diagonals, and a step onto an equal number is free.
  
 ## Input
  
